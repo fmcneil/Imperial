@@ -1,0 +1,491 @@
+<World>
+	<Countries>
+		<Country name="Russia">
+			<Homeland name="Vladivostok" />
+			<Homeland name="Novosibirsk" />
+			<Homeland name="Moscow" />
+			<Homeland name="Murmansk" />
+		</Country>
+		<Country name="USA">
+			<Homeland name="New York" />
+			<Homeland name="New Orleans" />
+			<Homeland name="San Francisco" />
+			<Homeland name="Chicago" />
+		</Country>
+		<Country name="Europe">
+			<Homeland name="Paris" />
+			<Homeland name="London" />
+			<Homeland name="Berlin" />
+			<Homeland name="Rome" />
+		</Country>
+		<Country name="Brazil">
+			<Homeland name="Brasilia"/>
+			<Homeland name="Rio de Janeiro"/>
+			<Homeland name="Fortaleza"/>
+			<Homeland name="Manaus"/>
+		</Country>
+		<Country name="China">
+			<Homeland name="Beijing" />
+			<Homeland name="Shanghai" />
+			<Homeland name="Chongqing" />
+			<Homeland name="Urumqi" />
+		</Country>
+		<Country name="India">
+			<Homeland name="Mumbai" />
+			<Homeland name="Chennai" />
+			<Homeland name="Kolkata" />
+			<Homeland name="New Delhi" />
+		</Country>
+	</Countries>
+
+	<Territories>
+		<Territory name="Brasilia" land="true" factory="army" mandatory="true">
+			<Adjacent name="Rio de Janeiro"/>
+			<Adjacent name="Fortaleza"/>
+			<Adjacent name="Manaus"/>
+			<Adjacent name="Argentina"/>
+			<Adjacent name="Peru"/>
+		</Territory>
+		<Territory name="Rio de Janeiro" land="true" factory="navy" mandatory="true">
+			<Adjacent name="Brasilia"/>
+			<Adjacent name="Fortaleza"/>
+			<Adjacent name="Argentina"/>
+			<Adjacent name="South Atlantic"/>
+		</Territory>
+		<Territory name="Fortaleza" land="true" factory="navy">
+			<Adjacent name="Rio de Janeiro"/>
+			<Adjacent name="Brasilia"/>
+			<Adjacent name="Manaus"/>
+			<Adjacent name="Caribbean Sea"/>
+		</Territory>
+		<Territory name="Manaus" land="true" factory="army">
+			<Adjacent name="Brasilia"/>
+			<Adjacent name="Fortaleza"/>
+			<Adjacent name="Colombia"/>
+			<Adjacent name="Peru"/>
+			<Adjacent name="Caribbean Sea"/>
+		</Territory>
+		<Territory name="Argentina" land="true">
+			<Adjacent name="Rio de Janeiro"/>
+			<Adjacent name="Brasilia"/>
+			<Adjacent name="Peru"/>
+			<Adjacent name="South Atlantic"/>
+			<Adjacent name="South Pacific"/>
+		</Territory>
+		<Territory name="Peru">
+			<Adjacent name="Argentina" land="true"/>
+			<Adjacent name="Brasilia"/>
+			<Adjacent name="Manaus"/>
+			<Adjacent name="Colombia"/>
+			<Adjacent name="South Pacific"/>
+		</Territory>
+		<Territory name="Colombia" land="true">
+			<Adjacent name="Manaus"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="Mexico"/>
+			<Adjacent name="North Pacific"/>
+		</Territory>
+		<Territory name="Mexico" land="true">
+			<Adjacent name="Colombia"/>
+			<Adjacent name="New Orleans"/>
+			<Adjacent name="San Francisco"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="North Pacific"/>
+		</Territory>
+		<Territory name="New Orleans" land="true" factory="navy" mandatory="true">
+			<Adjacent name="New York"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="Mexico"/>
+			<Adjacent name="San Francisco"/>
+			<Adjacent name="Chicago"/>
+		</Territory>
+		<Territory name="San Francisco" land="true" factory="navy">
+			<Adjacent name="Mexico"/>
+			<Adjacent name="North Pacific"/>
+			<Adjacent name="Canada"/>
+			<Adjacent name="Chicago"/>
+			<Adjacent name="New Orleans"/>
+		</Territory>
+		<Territory name="Chicago" land="true" factory="army" mandatory="true">
+			<Adjacent name="New York"/>
+			<Adjacent name="New Orleans"/>
+			<Adjacent name="San Francisco"/>
+			<Adjacent name="Canada"/>
+		</Territory>
+		<Territory name="New York" land="true" factory="navy">
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="New Orleans"/>
+			<Adjacent name="Chicago"/>
+			<Adjacent name="Canada"/>
+			<Adjacent name="Quebec"/>
+		</Territory>
+		<Territory name="Quebec" land="true">
+			<Adjacent name="New York"/>
+			<Adjacent name="Canada"/>
+			<Adjacent name="North Atlantic"/>
+		</Territory>
+		<Territory name="Canada" land="true">
+			<Adjacent name="Quebec"/>
+			<Adjacent name="New York"/>
+			<Adjacent name="Chicago"/>
+			<Adjacent name="San Francisco"/>
+			<Adjacent name="Alaska"/>
+			<Adjacent name="North Pacific"/>
+			<Adjacent name="North Atlantic"/>
+		</Territory>
+		<Territory name="Alaska" land="true">
+			<Adjacent name="Canada"/>
+			<Adjacent name="North Pacific"/>
+		</Territory>
+		<Territory name="North Pacific">
+			<Adjacent name="Alaska"/>
+			<Adjacent name="Canada"/>
+			<Adjacent name="San Francisco"/>
+			<Adjacent name="Mexico"/>
+			<Adjacent name="Colombia"/>
+			<Adjacent name="South Pacific"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="Sea of Japan"/>
+			<Adjacent name="China Sea"/>
+		</Territory>
+		<Territory name="South Pacific">
+			<Adjacent name="North Pacific"/>
+			<Adjacent name="Peru"/>
+			<Adjacent name="Argentina"/>
+			<Adjacent name="South Atlantic"/>
+			<Adjacent name="Tasman Sea"/>
+			<Adjacent name="China Sea"/>
+		</Territory>
+		<Territory name="Tasman Sea">
+			<Adjacent name="South Pacific"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Australia"/>
+			<Adjacent name="New Zealand"/>
+			<Adjacent name="Indonesia"/>
+		</Territory>
+		<Territory name="Australia" land="true">
+			<Adjacent name="Tasman Sea"/>
+		</Territory>
+		<Territory name="New Zealand" land="true">
+			<Adjacent name="Tasman Sea"/>
+		</Territory>
+		<Territory name="Indonesia" land="true">
+			<Adjacent name="Tasman Sea"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Indian Ocean"/>
+		</Territory>
+		<Territory name="Philippines" land="true">
+			<Adjacent name="China Sea"/>
+		</Territory>
+		<Territory name="Japan" land="true">
+			<Adjacent name="Sea of Japan"/>
+		</Territory>
+		<Territory name="China Sea">
+			<Adjacent name="Sea of Japan"/>
+			<Adjacent name="North Pacific"/>
+			<Adjacent name="South Pacific"/>
+			<Adjacent name="Tasman Sea"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Philippines"/>
+			<Adjacent name="Indonesia"/>
+			<Adjacent name="Indochina"/>
+			<Adjacent name="Shanghai"/>
+			<Adjacent name="Beijing"/>
+			<Adjacent name="Korea"/>
+		</Territory>
+		<Territory name="Sea of Japan">
+			<Adjacent name="North Pacific"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Japan"/>
+			<Adjacent name="Korea"/>
+			<Adjacent name="Vladivostok"/>
+		</Territory>
+		<Territory name="Indian Ocean">
+			<Adjacent name="Tasman Sea"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Mediterranean Sea"/>
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="South Atlantic"/>
+			<Adjacent name="Indonesia"/>
+			<Adjacent name="Indochina"/>
+			<Adjacent name="Kolkata"/>
+			<Adjacent name="Chennai"/>
+			<Adjacent name="Mumbai"/>
+			<Adjacent name="Iran"/>
+			<Adjacent name="Near East"/>
+			<Adjacent name="North-Africa"/>
+			<Adjacent name="East-Africa"/>
+			<Adjacent name="South-Africa"/>
+		</Territory>
+		<Territory name="South Atlantic">
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="South Pacific"/>
+			<Adjacent name="Argentina"/>
+			<Adjacent name="Rio de Janeiro"/>
+		</Territory>
+		<Territory name="Gulf of Guinea">
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="South Atlantic"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Guinea"/>
+			<Adjacent name="Nigeria"/>
+			<Adjacent name="South-Africa"/>
+		</Territory>
+		<Territory name="Caribbean Sea">
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="South Atlantic"/>
+			<Adjacent name="North Pacific"/>
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Fortaleza"/>
+			<Adjacent name="Manaus"/>
+			<Adjacent name="Colombia"/>
+			<Adjacent name="Mexico"/>
+			<Adjacent name="New Orleans"/>
+		</Territory>
+		<Territory name="North Atlantic">
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="Caribbean Sea"/>
+			<Adjacent name="Mediterranean Sea"/>
+			<Adjacent name="New York"/>
+			<Adjacent name="Quebec"/>
+			<Adjacent name="Canada"/>
+			<Adjacent name="London"/>
+			<Adjacent name="Paris"/>
+			<Adjacent name="Berlin"/>
+			<Adjacent name="Murmansk"/>
+			<Adjacent name="North-Africa"/>
+			<Adjacent name="Guinea"/>
+		</Territory>
+		<Territory name="Mediterranean Sea">
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Paris"/>
+			<Adjacent name="Berlin"/>
+			<Adjacent name="Turkey"/>
+			<Adjacent name="Near East"/>
+			<Adjacent name="North-Africa"/>
+		</Territory>
+		<Territory name="South-Africa" land="true">
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="Congo"/>
+			<Adjacent name="East-Africa"/>
+		</Territory>
+		<Territory name="East-Africa" land="true">
+			<Adjacent name="North-Africa"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="South-Africa"/>
+			<Adjacent name="Congo"/>
+			<Adjacent name="Nigeria"/>
+		</Territory>
+		<Territory name="Congo" land="true">
+			<Adjacent name="East-Africa"/>
+			<Adjacent name="South-Africa"/>
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="Nigeria"/>
+		</Territory>
+		<Territory name="Nigeria" land="true">
+			<Adjacent name="Guinea"/>
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="North-Africa"/>
+			<Adjacent name="East-Africa"/>
+			<Adjacent name="Congo"/>
+		</Territory>
+		<Territory name="North-Africa" land="true">
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Mediterranean Sea"/>
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="East-Africa"/>
+			<Adjacent name="Nigeria"/>
+			<Adjacent name="Guinea"/>
+			<Adjacent name="Near East"/>
+		</Territory>
+		<Territory name="Guinea" land="true">
+			<Adjacent name="North-Africa"/>
+			<Adjacent name="Nigeria"/>
+			<Adjacent name="Gulf of Guinea"/>
+			<Adjacent name="North Atlantic"/>
+		</Territory>
+		<Territory name="Paris" land="true" factory="army" mandatory="true">
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Mediterranean Sea"/>
+			<Adjacent name="London"/>
+			<Adjacent name="Berlin"/>
+			<Adjacent name="Rome"/>
+		</Territory>
+		<Territory name="London" land="true" factory="navy" mandatory="true">
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Paris"/>
+			<Adjacent name="Berlin"/>
+		</Territory>
+		<Territory name="Berlin" land="true" factory="army">
+			<Adjacent name="London"/>
+			<Adjacent name="Paris"/>
+			<Adjacent name="rome"/>
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Murmansk"/>
+			<Adjacent name="Ukraine"/>
+		</Territory>
+		<Territory name="Rome" land="true" factory="navy">
+			<Adjacent name="Ukraine"/>
+			<Adjacent name="Berlin"/>
+			<Adjacent name="Turkey"/>
+			<Adjacent name="Mediterranean Sea"/>
+			<Adjacent name="Paris"/>
+		</Territory>
+		<Territory name="Ukraine" land="true">
+			<Adjacent name="Berlin"/>
+			<Adjacent name="Rome"/>
+			<Adjacent name="Murmansk"/>
+			<Adjacent name="Moscow"/>
+		</Territory>
+		<Territory name="Turkey" land="true">
+			<Adjacent name="Rome"/>
+			<Adjacent name="Moscow"/>
+			<Adjacent name="Iran"/>
+			<Adjacent name="Near East"/>
+			<Adjacent name="Mediterranean Sea"/>
+		</Territory>
+		<Territory name="Near East" land="true">
+			<Adjacent name="Iran"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="North-Africa"/>
+			<Adjacent name="Mediterranean Sea"/>
+			<Adjacent name="Turkey"/>
+		</Territory>
+		<Territory name="Iran" land="true">
+			<Adjacent name="Afghanistan"/>
+			<Adjacent name="Mumbai"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Near East"/>
+			<Adjacent name="Turkey"/>
+			<Adjacent name="Moscow"/>
+		</Territory>
+		<Territory name="Afghanistan" land="true">
+			<Adjacent name="New Delhi"/>
+			<Adjacent name="Mumbai"/>
+			<Adjacent name="Iran"/>
+			<Adjacent name="Kazakhstan"/>
+			<Adjacent name="Urumqi"/>
+		</Territory>
+		<Territory name="Kazakhstan" land="true">
+			<Adjacent name="Mongolia"/>
+			<Adjacent name="Urumqi"/>
+			<Adjacent name="Afghanistan"/>
+			<Adjacent name="Moscow"/>
+			<Adjacent name="Novosibirsk"/>
+		</Territory>
+		<Territory name="Mongolia" land="true">
+			<Adjacent name="Beijing"/>
+			<Adjacent name="Urumqi"/>
+			<Adjacent name="Kazakhstan"/>
+			<Adjacent name="Novosibirsk"/>
+			<Adjacent name="Vladivostok"/>
+		</Territory>
+		<Territory name="Indochina" land="true">
+			<Adjacent name="Shanghai"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Kolkata"/>
+			<Adjacent name="Chongqing"/>
+		</Territory>
+		<Territory name="Korea" land="true">
+			<Adjacent name="Vladivostok"/>
+			<Adjacent name="Sea of Japan"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Beijing"/>
+		</Territory>
+		<Territory name="Chennai" land="true" factory="army">
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Mumbai"/>
+			<Adjacent name="Kolkata"/>
+		</Territory>
+		<Territory name="Mumbai" land="true" factory="navy" mandatory="true">
+			<Adjacent name="Indian Ocean"/>
+			<Adjacent name="Iran"/>
+			<Adjacent name="Afghanistan"/>
+			<Adjacent name="New Delhi"/>
+			<Adjacent name="Kolkata"/>
+			<Adjacent name="Chennai"/>
+		</Territory>
+		<Territory name="New Delhi" land="true" factory="army" mandatory="true">
+			<Adjacent name="Mumbai"/>
+			<Adjacent name="Afghanistan"/>
+			<Adjacent name="Urumqi"/>
+			<Adjacent name="Kolkata"/>
+		</Territory>
+		<Territory name="Kolkata" land="true" factory="navy">
+			<Adjacent name="Chennai"/>
+			<Adjacent name="Mumbai"/>
+			<Adjacent name="New Delhi"/>
+			<Adjacent name="Urumqi"/>
+			<Adjacent name="Chongqing"/>
+			<Adjacent name="Indochina"/>
+			<Adjacent name="Indian Ocean"/>
+		</Territory>
+		<Territory name="Shanghai" land="true" factory="navy" mandatory="true">
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Indochina"/>
+			<Adjacent name="Chongqing"/>
+			<Adjacent name="Beijing"/>
+		</Territory>
+		<Territory name="Chongqing" land="true" factory="army">
+			<Adjacent name="Shanghai"/>
+			<Adjacent name="Indochina"/>
+			<Adjacent name="Kolkata"/>
+			<Adjacent name="Urumqi"/>
+			<Adjacent name="Beijing"/>
+		</Territory>
+		<Territory name="Urumqi" land="true" factory="army">
+			<Adjacent name="Beijing"/>
+			<Adjacent name="Chongqing"/>
+			<Adjacent name="Kolkata"/>
+			<Adjacent name="New Delhi"/>
+			<Adjacent name="Afghanistan"/>
+			<Adjacent name="Kazakhstan"/>
+			<Adjacent name="Mongolia"/>
+		</Territory>
+		<Territory name="Beijing" land="true" factory="army" mandatory="true">
+			<Adjacent name="Korea"/>
+			<Adjacent name="China Sea"/>
+			<Adjacent name="Shanghai"/>
+			<Adjacent name="Chongqing"/>
+			<Adjacent name="Urumqi"/>
+			<Adjacent name="Mongolia"/>
+			<Adjacent name="Vladivostok"/>
+		</Territory>
+		<Territory name="Vladivostok" land="true" factory="navy" mandatory="true">
+			<Adjacent name="Sea of Japan"/>
+			<Adjacent name="Korea"/>
+			<Adjacent name="Beijing"/>
+			<Adjacent name="Mongolia"/>
+			<Adjacent name="Novosibirsk"/>
+		</Territory>
+		<Territory name="Novosibirsk" land="true" factory="army">
+			<Adjacent name="Vladivostok"/>
+			<Adjacent name="Mongolia"/>
+			<Adjacent name="Kazakhstan"/>
+			<Adjacent name="Moscow"/>
+			<Adjacent name="Murmansk"/>
+		</Territory>
+		<Territory name="Moscow" land="true" factory="army" mandatory="true">
+			<Adjacent name="Novosibirsk"/>
+			<Adjacent name="Kazakhstan"/>
+			<Adjacent name="Iran"/>
+			<Adjacent name="Turkey"/>
+			<Adjacent name="Ukraine"/>
+			<Adjacent name="Murmansk"/>
+		</Territory>
+		<Territory name="Murmansk" land="true" factory="navy">
+			<Adjacent name="North Atlantic"/>
+			<Adjacent name="Berlin"/>
+			<Adjacent name="Ukraine"/>
+			<Adjacent name="Moscow"/>
+			<Adjacent name="Novosibirsk"/>
+		</Territory>
+	</Territories>
+</World>
